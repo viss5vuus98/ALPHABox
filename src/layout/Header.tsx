@@ -5,7 +5,7 @@ const Header = () => {
       <div className="container">
       <div className="flex py-4 justify-between text-white">
         <a className="text-3xl font-serif">ALPHABOX+</a>
-        <nav className="flex justify-between items-center w-8/12 ml-auto">
+        <nav className="hidden md:flex justify-between items-center w-8/12 ml-auto">
           <ul className="flex justify-between space-x-10">
             <li><a href="#">產品</a></li>
             <li><a href="#">關於我們</a></li>
