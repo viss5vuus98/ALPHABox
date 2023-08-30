@@ -8,8 +8,8 @@ const Header = () => {
       <div className="container">
       <div className="flex py-4 justify-between text-white">
         <a className="text-3xl font-serif">ALPHABOX+</a>
-        <nav className={`absolute top-[100%] left-[0%] z-[120] bg-primary w-[100vw] border-t transition-all duration-[0.8s] overflow-hidden
-        md:border-0 md:py-0 md:static md:flex justify-between items-center md:w-8/12 md:bg-transparent ml-auto 
+        <nav className={`absolute top-[100%] left-[0%] z-[120] bg-gradient-to-b from-primary to-primary-100 w-[100vw] border-t transition-all duration-[0.8s] overflow-hidden
+        md:border-t-0 md:py-0 md:static md:flex md:max-h-[79px] md:z-0 md:m-0 justify-between items-center md:w-8/12 md:bg-none ml-auto
         ${isMenuOpen ? 'py-8' : 'py-0'}
         ${isMenuOpen ? 'max-h-[404px]' : 'max-h-0'}`}>
           <ul className="mb-5 md:mb-0 flex flex-col md:flex-row items-center md:justify-between md:space-x-10 space-y-5 md:space-y-0">

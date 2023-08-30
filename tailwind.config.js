@@ -40,6 +40,9 @@ export default {
         sans: ["Noto Sans TC", defaultTheme.fontFamily.sans],
         serif: ["Shrikhand", defaultTheme.fontFamily.serif],
       },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      },
     },
   },
   plugins: [],

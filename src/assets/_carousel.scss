@@ -1,11 +1,36 @@
+.swiper-button-prev::after {
+  content: '\f817';
+  font-family: 'Material Symbols Outlined';
+  position: absolute;
+  left: 0;
+  font-size: 80px;
+  color: #fff;
+}
+.swiper-button-next::after {
+  content: '\f817';
+  font-family: 'Material Symbols Outlined';
+  position: absolute;
+  right: 0;
+  font-size: 80px;
+  color: #fff;
+  transform:  rotate(180deg);
+}
+// .swiper-button-prev::after,
+// .swiper-button-next::after {
+//   display: none;
+// }
+:root {
+  --swiper-navigation-size: 20px;
+}
+
 .carousel-xl {
   .swiper-wrapper {
     border: 3px solid #000;
     max-width: 1296px;
     height: 560px;
     margin: 0 auto;
-    position: relative;
   }
+
   // .swiper-button-prev::after {
   //   content: "<";
   //   font-size: 40px;

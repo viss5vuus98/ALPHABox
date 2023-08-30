@@ -1,9 +1,9 @@
-const HeaderBanner = () => {
+const ImageBanner = () => {
   return (
         <div className="w-full px-3 md:px-20 flex flex-col md:flex-row justify-between items-center md:items-stretch gap-4 md:gap-8 absolute -bottom-[104px] md:top-[308px] z-10">
-          <div className="block md:hidden mb-4 text-white text-center">
-              <h1 className="w-3/4 sm:w-full mx-auto sm:mx-0 break-words text-xl tracking-[26px] font-serif">ALPHABOX+</h1>
-              <p className="w-3/4 sm:w-full mx-auto sm:mx-0 font-bold sm:tracking-[4.8px]">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
+          <div className="block w-full md:hidden mb-4 text-white text-center">
+              <h1 className="sm:w-full sm:mx-0 break-words text-xl tracking-[26px] font-serif">ALPHABOX+</h1>
+              <p className="sm:w-full sm:mx-0 font-bold sm:tracking-[4.8px]">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
           </div>
           <div className="md:w-[calc((100%-96px)/4)] h-[351px] md:h-[676px] relative before:content-['Diane']
            before:text-white before:absolute before:top-4 before:right-1/2 before:translate-x-1/2 before:text-3xl before:font-serif before:font-bold">
@@ -32,4 +32,4 @@ const HeaderBanner = () => {
   );
 }
 
-export default HeaderBanner;
+export default ImageBanner;

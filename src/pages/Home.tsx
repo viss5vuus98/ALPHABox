@@ -1,5 +1,5 @@
 
-import HeaderBanner from "../components/Home/ImageBanner";
+import ImageBanner from "../components/Home/ImageBanner";
 import Carousel from '../components/Home/Carousel';
 import SectionTitle from "../components/SectionTitle";
 import Card from "../components/Card";
@@ -9,7 +9,7 @@ import CardGroup from "../components/CardGroup";
 const Home = () => {
   return (
     <>
-      <div className="bg-gradient-to-b from-primary to-primary-100 pt-14 h-[1778px] md:h-[880px] relative">
+      <div className="pt-14 h-[1778px] md:h-[880px] relative bg-cover bg-top" style={{backgroundImage: 'url(/assets/image/home_background.png)'}}>
         <div className="container px-3">
           <div className="flex flex-col md:flex-row-reverse md:justify-between  text-white">
             <div className="mb-8 md:mb-0 border-t pt-2 md:pt-0 flex flex-col justify-between">
@@ -24,18 +24,18 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <HeaderBanner />
+        <ImageBanner />
       </div>
-      <div className="pt-[136px] md:py-36 pb-[52px] relative before:content-['123'] before:bg-[url('/assets/image/mobile/carousel_mobile.png')] before:absolute before:top-0 before:left-0 before:w-full md:before:w-1/2 before:h-full before:bg-no-repeat before:bg-cover before:z-[-1] before:blur-md h-[1089px]">
-        <div className="h-10 mb-2 mx-20 bg-primary"></div>
+      <div className="pt-[136px] md:py-36 pb-[52px] relative before:content-['123'] before:bg-[url('/assets/image/mobile/carousel_mobile.png')] before:absolute before:top-0 before:left-0 before:w-full md:before:w-1/2 before:h-full before:bg-no-repeat before:bg-cover before:z-[-1] before:blur-md h-[1089px] z-[-2] bg-gradient-radial from-[#300871] to-black">
+        <div className="h-10 mb-2 mx-20 bg-gradient-to-r from-primary to-primary-100"></div>
         <div className="px-20">
-          <h3 className="text-2xl md:text-5xl text-white tracking-[10px] sm:tracking-[24px] md:tracking-[40px] font-bold mb-3">什麼是</h3>
-          <h3 className="text-2xl md:text-5xl text-white tracking-[10px] sm:tracking-[24px] md:tracking-[40px] font-bold mb-4">ALPHABOX+</h3>
+          <h3 className="text-2xl md:text-5xl text-white tracking-normal sm:tracking-[24px] md:tracking-[40px] font-bold mb-3">什麼是</h3>
+          <h3 className="text-2xl md:text-5xl text-white tracking-normal sm:tracking-[24px] md:tracking-[40px] font-bold mb-4">ALPHABOX+</h3>
         </div>
         <Carousel />
-        <div className="h-10 mt-8 mx-20 bg-primary"></div>        
+        <div className="h-10 mt-8 mx-20 bg-gradient-to-l from-primary to-primary-100"></div>        
       </div>
-      <div className="pt-[60px] md:pt-40 pb-10">
+      <div className="pt-[60px] md:pt-40 pb-10 bg-gradient-radial from-[#28085C] to-black">
         <div className="container py-3">
           <div className="flex flex-wrap">
             <SectionTitle title="最新消息" />
@@ -79,7 +79,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="pt-[60px] md:pt-40 pb-20 md:pb-10 bg-[#28085C]">
+      <div className="pt-[60px] md:pt-40 pb-20 md:pb-10 bg-gradient-radial from-black to-[#28085C] ">
         <div className="container px-3">
           <div className="mb-4 md:md-6 flex flex-wrap text-white items-center">
             <div className="md:w-6/12 md:-order-2">
