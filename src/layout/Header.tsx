@@ -8,7 +8,7 @@ const Header = () => {
     <header className=" bg-primary border-b border-white relative">
       <div className="container">
       <div className="flex py-4 justify-between items-center text-white">
-        <Link to="/" className="text-2xl sm:text-3xl font-serif">ALPHABOX+</Link>
+        <Link to="/ALPHABox/" className="text-2xl sm:text-3xl font-serif">ALPHABOX+</Link>
         <nav className={`absolute top-[100%] left-[0%] z-[120] bg-gradient-to-b from-primary to-primary-100 w-[100vw] border-t transition-all duration-[0.8s] overflow-hidden
         md:border-t-0 md:py-0 md:static md:flex md:max-h-[79px] md:z-0 md:m-0 justify-between items-center md:w-8/12 md:bg-none ml-auto
         ${isMenuOpen ? 'py-8' : 'py-0'}

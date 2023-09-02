@@ -52,9 +52,9 @@ const Product:React.FC = () => {
           </div>
           <img className='w-[90px] sm:w-full' src={line_end_arrow_notch} alt="arrow" />
         </div>
-        <img className='sm:hidden block w-[109px] h-[109px] mx-auto mt-4' src="/assets/image/circle3.png" alt="" />          
+        <img className='sm:hidden block w-[109px] h-[109px] mx-auto mt-4' src="assets/image/circle3.png" alt="" />          
       </div>
-      <img className='hidden sm:block w-[170px] xl:w-[196px] h-[170px] xl:h-[196px] absolute bottom-[60px] right-1/2 translate-x-1/2 z-20' src="/assets/image/circle3.png" alt="" />
+      <img className='hidden sm:block w-[170px] xl:w-[196px] h-[170px] xl:h-[196px] absolute bottom-[60px] right-1/2 translate-x-1/2 z-20' src="assets/image/circle3.png" alt="" />
     </section>
     <section className='bg-white'>
       <div className="container px-3 pt-[60px] md:pt-[80px] pb-[80px] md:pb-[120px]">
