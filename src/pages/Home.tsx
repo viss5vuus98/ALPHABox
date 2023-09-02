@@ -1,10 +1,11 @@
-
+//components
 import ImageBanner from "../components/Home/ImageBanner";
 import Carousel from '../components/Home/Carousel';
 import SectionTitle from "../components/SectionTitle";
 import Card from "../components/Card";
 import Button from "../components/Button";
 import CardGroup from "../components/CardGroup";
+import ScrollBanner from "../components/Home/ScrollBanner";
 
 const Home = () => {
   return (
@@ -26,14 +27,14 @@ const Home = () => {
         </div>
         <ImageBanner />
       </div>
-      <div className="pt-[136px] md:py-36 pb-[52px] relative before:content-['123'] before:bg-[url('/assets/image/mobile/carousel_mobile.png')] before:absolute before:top-0 before:left-0 before:w-full md:before:w-1/2 before:h-full before:bg-no-repeat before:bg-cover before:z-[-1] before:blur-md h-[1089px] z-[-2] bg-gradient-radial from-[#300871] to-black">
-        <div className="h-10 mb-2 mx-20 bg-gradient-to-r from-primary to-primary-100"></div>
+      <div className="pt-[136px] md:py-36 pb-[52px] relative before:content-['123'] before:bg-[url('/assets/image/mobile/carousel_mobile.png')] before:absolute before:top-0 before:left-0 before:w-full md:before:w-1/2 before:h-full before:bg-no-repeat before:bg-cover before:z-0 before:blur-md h-[1089px]  bg-gradient-radial from-[#300871] to-black">
+        <div className="h-10 mb-2 mx-20 bg-gradient-to-r from-primary to-primary-100 z-10 relative"></div>
         <div className="px-20">
           <h3 className="text-2xl md:text-5xl text-white tracking-normal sm:tracking-[24px] md:tracking-[40px] font-bold mb-3">什麼是</h3>
           <h3 className="text-2xl md:text-5xl text-white tracking-normal sm:tracking-[24px] md:tracking-[40px] font-bold mb-4">ALPHABOX+</h3>
         </div>
         <Carousel />
-        <div className="h-10 mt-8 mx-20 bg-gradient-to-l from-primary to-primary-100"></div>        
+        <div className="h-10 mt-8 mx-20 bg-gradient-to-l from-primary to-primary-100 z-10 relative"></div>        
       </div>
       <div className="pt-[60px] md:pt-40 pb-10 bg-gradient-radial from-[#28085C] to-black">
         <div className="container py-3">
@@ -91,7 +92,7 @@ const Home = () => {
             emergency
             </p>
           </div>
-          <div className="-mx-3 mb-0 md:mb-32 flex flex-wrap md:overflow-hidden md:flex-nowrap gap-6 md:gap-0">
+          <div className="-mx-3 mb-0 md:mb-32 flex flex-wrap md:overflow-hidden md:flex-nowrap gap-6 md:gap-0 md:hidden">
             <Card 
             title="Zone" 
             location="Taipei" 
@@ -115,6 +116,7 @@ const Home = () => {
             description="ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。"
             robot="ALPHABOX+ Dianne" />                                    
           </div>
+          <ScrollBanner />          
           <p className="hidden md:block text-white">若您有任何疑問或建議，歡迎隨時與我們聯絡，我們將竭誠為您解答。</p>
         </div>
       </div>

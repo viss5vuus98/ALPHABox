@@ -6,8 +6,8 @@ import 'swiper/css/bundle';
 const Carousel = () => {
   return (
     <div className='relative border-t border-white pt-8 px-3'>
-      <img className='prev absolute top-1/2 left-[80px] w-[180px] h-5 rotate-180 cursor-pointer z-30' src='/assets/image/icons/line_end_arrow_notch.png' />
-      <img className='next absolute top-1/2 right-[80px] w-[180px] h-5 cursor-pointer z-30' src='/assets/image/icons/line_end_arrow_notch.png' />
+      <img className='prev absolute top-1/2 left-[80px] w-[180px] h-5 rotate-180 cursor-pointer z-30 hidden md:block' src='/assets/image/icons/line_end_arrow_notch.png' />
+      <img className='next absolute top-1/2 right-[80px] w-[180px] h-5 cursor-pointer z-30 hidden md:block' src='/assets/image/icons/line_end_arrow_notch.png' />
       <Swiper
         modules={[Navigation]}      
         spaceBetween={1}
