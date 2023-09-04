@@ -15,7 +15,7 @@ const Header = () => {
         ${isMenuOpen ? 'h-[404px]' : 'h-0'}`}>
           <ul className="mb-5 md:mb-0 flex flex-col md:flex-row items-center md:justify-between md:space-x-10 space-y-5 md:space-y-0">
             <li><a href="#">產品</a></li>
-            <li><a href="#">關於我們</a></li>
+            <li><Link className="hover:text-black cursor-pointer" to="/ALPHABox/about">關於我們</Link></li>
             <li><a href="#">最新消息</a></li>
             <li><a href="#">FAQ</a></li>
             <li>聯絡我們</li>
