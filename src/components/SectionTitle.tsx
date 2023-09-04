@@ -1,5 +1,3 @@
-
-
 interface SectionTitleProps {
   title: string;
   subtitle?: string;
