@@ -11,6 +11,4 @@ const Button = ({ innerText }: ButtonProps) => {
   );
 }
 
-
-
 export default Button;

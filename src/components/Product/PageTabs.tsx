@@ -25,7 +25,7 @@ const PageTabs = () => {
 
 const Tab = ({ text, bg_color, text_color  }:TabProps) => {
   return (
-    <li className={`grow hover:bg-${text_color} hover:text-${bg_color}`}><Link to={`/ALPHABox/${text.toLowerCase()}`} className={`block border rounded-[40px] py-1 px-4 text-center font-serif bg-${bg_color} text-${text_color}`}>{text}</Link></li>
+    <li className={`grow`}><Link to={`/ALPHABox/${text.toLowerCase()}`} className={`block border rounded-[40px] py-1 px-4 text-center font-serif bg-${bg_color} text-${text_color} hover:bg-white hover:text-black`}>{text}</Link></li>
   )
 }
 
