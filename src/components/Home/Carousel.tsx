@@ -3,6 +3,7 @@ import { Navigation } from 'swiper/modules';
 // import styles bundle
 import 'swiper/css/bundle';
 
+
 const Carousel = () => {
   return (
     <div className='relative border-t border-white pt-8 px-3'>

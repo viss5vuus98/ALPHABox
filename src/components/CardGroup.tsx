@@ -17,12 +17,14 @@ const Card_xl = ({serialNumber, name, type, description, image}: CardXlProps) =>
         <div className="px-3 md:px-10 py-6 text-white md:bg-black md:border-x hover:md:opacity-50">
           <p className="my-20 text-center text-9xl xl:text-[400px] font-light font-[SairaExtraCondensed]">{serialNumber}</p>
           <p className="mb-[18px] text-center text-2xl md:text-3xl font-serif">{name}</p>
-          <div className='flex flex-col xl:flex-row md:justify-between'>
-            <div className='mb-3'>
+          <div className='flex flex-col xl:flex-row justify-between items-center xl:gap-4 2xl:gap-7'>
+            <div className='mb-3 xl:text-[14px] xl:flex-[1_0_60%]'>
               <p className="font-bold">{type}</p>
               <p className="break-all">{description}</p>
             </div>
-            <img className='w-[150px] md:w-full' src={line_end_arrow_notch} alt="arrow" />
+            <div>
+              <img className='' src={line_end_arrow_notch} alt="arrow" />
+            </div>
           </div>
         </div>
       </div>
