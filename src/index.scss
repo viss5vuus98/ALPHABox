@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    overflow: scroll;
+    overflow-x: hidden;
+  } 
   body {
     background-color: #7000FF;
   };

@@ -7,7 +7,7 @@ import Button from "../components/Button";
 import CardGroup from "../components/CardGroup";
 import ScrollBanner from "../components/Home/ScrollBanner";
 import arrow_notch_xl from '/assets/image/icons/arrow_notch_xl.svg';
-import arrow_notch_sm from '/assets/image/icons/arrow_notch_sm.svg';
+// import arrow_notch_sm from '/assets/image/icons/arrow_notch_sm.svg';
 
 const Home = () => {
   return (
