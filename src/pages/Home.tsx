@@ -6,12 +6,14 @@ import Card from "../components/Card";
 import Button from "../components/Button";
 import CardGroup from "../components/CardGroup";
 import ScrollBanner from "../components/Home/ScrollBanner";
+import arrow_notch_xl from '/assets/image/icons/arrow_notch_xl.svg';
+import arrow_notch_sm from '/assets/image/icons/arrow_notch_sm.svg';
 
 const Home = () => {
   return (
     <>
       <div className="pt-14 h-[1778px] md:h-[880px] relative bg-cover bg-top" style={{backgroundImage: 'url(/assets/image/home_background.png)'}}>
-        <div className="container px-3">
+        <div className="px-20">
           <div className="flex flex-col md:flex-row-reverse md:justify-between  text-white">
             <div className="mb-8 md:mb-0 border-t pt-2 md:pt-0 flex flex-col justify-between">
               <h2 className="font-bold tracking-[1.6px]">ALPHABOX+ STUDIO</h2>
@@ -21,7 +23,7 @@ const Home = () => {
               <img className="w-full h-full a-circle" src="assets/image/circle.png" alt="circle" />
             </div>
             <div className="border-b items-end hidden md:flex">
-              <p className="mt-auto">最新消息！新版本 v15.4 釋出，搶先體驗！</p>
+              <p>最新消息！新版本 v15.4 釋出，搶先體驗！</p>
             </div>
           </div>
         </div>
@@ -29,7 +31,7 @@ const Home = () => {
       </div>
       <div className="pt-[136px] md:py-36 pb-[52px] relative before:content-['123'] before:bg-[url('/assets/image/mobile/carousel_mobile.png')] before:absolute before:top-0 before:left-0 before:w-full md:before:w-1/2 before:h-full before:bg-no-repeat before:bg-cover before:z-0 before:blur-md h-[1089px]  bg-gradient-radial from-[#300871] to-black">
         <div className="h-10 mb-2 mx-20 bg-gradient-to-r from-primary to-primary-100 z-10 relative"></div>
-        <div className="px-20">
+        <div className="px-20 z-20 relative">
           <h3 className="text-2xl md:text-5xl text-white tracking-normal sm:tracking-[24px] md:tracking-[40px] font-bold mb-3">什麼是</h3>
           <h3 className="text-2xl md:text-5xl text-white tracking-normal sm:tracking-[24px] md:tracking-[40px] font-bold mb-4">ALPHABOX+</h3>
         </div>
@@ -40,15 +42,20 @@ const Home = () => {
         <div className="container py-3">
           <div className="flex flex-wrap">
             <SectionTitle title="最新消息" />
-            <div className="w-full mt-8 md:mt-10 py-8 md:py-10 px-4 text-white border-t border-white">
-              <div className="mb-2 flex space-x-4">
-                <span className="material-symbols-outlined text-[24px]">
-                emergency
-                </span>                
-                <p className="font-bold tracking-[4px]  sm:tracking-[16px] md:tracking-[20px]">2023.06.30</p>
+            <div className="flex flex-wrap justify-between items-center w-full mt-8 md:mt-10 py-8 md:py-10 px-4 text-white border-t border-white">
+              <div>
+                <div className="mb-2 flex space-x-4">
+                  <span className="material-symbols-outlined text-[24px]">
+                  emergency
+                  </span>                
+                  <p className="font-bold tracking-[4px]  sm:tracking-[16px] md:tracking-[20px]">2023.06.30</p>
+                </div>
+                <h3 className="mb-3 font-bold tracking-[20px]">產品升級公告</h3>
+                <p>榮幸地宣布，ALPHABOX+ 已成功完成最新一代的升級！本次升級包括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。<br/>歡迎您了解本次升級帶來的更為卓越的性能！</p>
               </div>
-              <h3 className="mb-3 font-bold tracking-[20px]">產品升級公告</h3>
-              <p>榮幸地宣布，ALPHABOX+ 已成功完成最新一代的升級！本次升級包括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。<br/>歡迎您了解本次升級帶來的更為卓越的性能！</p>
+              <div>
+                <img src={arrow_notch_xl} alt="Arrow" />
+              </div>
             </div>
             <div className="w-full md:w-1/2 py-8 md:py-10  px-4 text-white border-y md:border-r border-white">
               <div className="mb-2 flex space-x-4">

@@ -13,10 +13,10 @@ const Footer = () => {
             </span>
           </div>
           <ul className="flex space-y-2 md:space-y-0 md:space-x-6 font-bold flex-col md:flex-row">
-            <li>關於我們</li>
-            <li>產品資訊</li>
-            <li>常見問題</li>
-            <li>隱私政策</li>
+            <li><a href="#">關於我們</a></li>
+            <li><a href="#">產品資訊</a></li>
+            <li><a href="#">常見問題</a></li>
+            <li><a href="#">隱私政策</a></li>
           </ul>
           <p className="block md:hidden font-bold tracking-[1.6px]">Copyright © 2023 Hexschool.</p>
         </div>
