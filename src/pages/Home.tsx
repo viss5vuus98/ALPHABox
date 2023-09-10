@@ -7,7 +7,7 @@ import Button from "../components/Button";
 import CardGroup from "../components/CardGroup";
 import ScrollBanner from "../components/Home/ScrollBanner";
 import arrow_notch_xl from '/assets/image/icons/arrow_notch_xl.svg';
-// import arrow_notch_sm from '/assets/image/icons/arrow_notch_sm.svg';
+import arrow_notch_sm from '/assets/image/icons/arrow_notch_sm.svg';
 
 const Home = () => {
   return (
@@ -42,52 +42,56 @@ const Home = () => {
         <div className="container py-3">
           <div className="flex flex-wrap">
             <SectionTitle title="最新消息" />
-            <div className="flex flex-wrap justify-between items-center w-full mt-8 md:mt-10 py-8 md:py-10 px-4 text-white border-t border-white">
-              <div>
+            <div className="w-full mt-8 md:mt-10 py-8 md:py-10 px-4 text-white border-t border-white">
                 <div className="mb-2 flex space-x-4">
                   <span className="material-symbols-outlined text-[24px]">
                   emergency
                   </span>                
-                  <p className="font-bold tracking-[4px]  sm:tracking-[16px] md:tracking-[20px]">2023.06.30</p>
+                  <time className="font-bold tracking-[4px]  sm:tracking-[16px] md:tracking-[20px]">2023.06.30</time>
                 </div>
                 <h3 className="mb-3 font-bold tracking-[20px]">產品升級公告</h3>
-                <p>榮幸地宣布，ALPHABOX+ 已成功完成最新一代的升級！本次升級包括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。<br/>歡迎您了解本次升級帶來的更為卓越的性能！</p>
-              </div>
-              <div>
-                <img src={arrow_notch_xl} alt="Arrow" />
-              </div>
+                <div className="flex flex-wrap justify-between gap-4">
+                  <p>榮幸地宣布，ALPHABOX+ 已成功完成最新一代的升級！本次升級包括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。<br/>歡迎您了解本次升級帶來的更為卓越的性能！</p>
+                  <div>
+                    <img src={arrow_notch_xl} alt="Arrow" />
+                  </div>
+                </div>
             </div>
             <div className="w-full md:w-1/2 py-8 md:py-10  px-4 text-white border-y md:border-r border-white">
               <div className="mb-2 flex space-x-4">
                 <span className="material-symbols-outlined text-[24px]">
                 emergency
                 </span>                
-                <p className="font-bold tracking-[4px] sm:tracking-[16px] md:tracking-[20px]">2023.06.30</p>
+                <time className="font-bold tracking-[4px] sm:tracking-[16px] md:tracking-[20px]">2023.06.30</time>
               </div>
               <h3 className="mb-3 font-bold tracking-[16px] md:tracking-[20px]">限時優惠活動</h3>
-              <div>
-                <p>為答謝廣大用戶的支持，本月將舉辦一場限時優惠活動。訂閱 ALPHABOX+ 的顧客，皆可享受九折優惠。機會難得，請勿錯過此良機！</p>  
-                <img src="" alt="" />
-              </div>
+              <p>為答謝廣大用戶的支持，本月將舉辦一場限時優惠活動。訂閱 ALPHABOX+ 的顧客，皆可享受九折優惠。機會難得，請勿錯過此良機！</p>
+              <div className="mt-4">
+                <img src={arrow_notch_sm} alt="Arrow" />
+              </div>                  
             </div>
             <div className="w-full md:w-1/2 py-8 md:py-10  px-4 text-white border-y border-white">
               <div className="mb-2 flex space-x-4">
                 <span className="material-symbols-outlined text-[24px]">
                 emergency
                 </span>                
-                <p className="font-bold tracking-[4px] sm:tracking-[16px] md:tracking-[20px]">2023.04.18</p>
+                <time className="font-bold tracking-[4px] sm:tracking-[16px] md:tracking-[20px]">2023.04.18</time>
               </div>
               <h3 className="mb-3 font-bold tracking-[20px]">新功能上線</h3>
               <p>為使您的 ALPHABOX+ 更趨完善，我們不懈地研發創新功能。近期，我們新推出智慧家居控制功能，使您的機器人能更便利地協助您操作家中各類智能設備。</p>
+              <div className="mt-4">
+                <img src={arrow_notch_sm} alt="Arrow" />
+              </div>              
             </div>
             <div className="h-[132px] w-[132px] mt-10 md:mt-[76px] mb-10 md:mb-24 mx-auto">
-              <img className="a-circle" src="assets/image/circle2.png" alt="More" />
+              <img src="assets/image/circle2.png" alt="More" />
             </div>
             <p className="w-full text-end font-bold text-white tracking-[1.5] hidden md:block">為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料</p>                          
           </div>
         </div>
       </div>
-      <div className="pt-[60px] md:pt-40 pb-20 md:pb-10 bg-gradient-radial from-black to-[#28085C] ">
+      <div className="pt-[60px] md:pt-40 pb-20 md:pb-10 bg-gradient-radial from-black to-[#28085C] relative overflow-hidden z-10">
+        <p className="absolute left-[50%] -bottom-[10%] md:-bottom-[20%] -z-10 translate-x-[-50%] text-[400px] leading-normal text-white font-serif opacity-5">ALPHABOX+</p>
         <div className="container px-3">
           <div className="mb-4 md:md-6 flex flex-wrap text-white items-center">
             <div className="md:w-6/12 md:-order-2">

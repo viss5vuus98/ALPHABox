@@ -11,3 +11,8 @@
   }
 }
 
+.border-b-hover {
+  &:hover h5::before {
+    width: 100%;
+  }
+}

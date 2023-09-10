@@ -47,6 +47,9 @@ export default {
       transitionProperty: {
         "hcontent": "height, padding",
       },
+      boxShadow: {
+        "xl" : "0px 0px 16px 8px rgba(143, 0, 255, 0.80)"
+      },
     },
   },
   plugins: [],

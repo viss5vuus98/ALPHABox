@@ -79,8 +79,8 @@ const Product:React.FC = () => {
     </section>
     <section className='bg-gradient-radial from-[#28085C] to-black pt-[60px] pb-[80px] md:pt-[160px] md:pb-[216px]'>
       <div className="container px-3">
-        <SectionTitle title="聯絡我們" />
-        <p className='w-3/12 mt-4 sm:mt-3 mb-6 sm:mb-[80px] text-white'>展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。</p>
+        <SectionTitle title="使用分享" />
+        <p className='md:w-3/12 mt-4 sm:mt-3 mb-6 sm:mb-[80px] text-white'>展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。</p>
         <div className="-mx-3 mb-0 md:mb-32 flex flex-wrap md:overflow-hidden md:flex-nowrap gap-6 md:gap-0">
             <Card 
             title="Zone" 
