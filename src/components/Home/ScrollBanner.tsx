@@ -18,16 +18,17 @@ interface ScrollBannerProps {
 
 const ScrollBanner = () => {
   return (
-    <>
+    <div>
     <Swiper
       modules={[Scrollbar]}
       scrollbar={{
-        "hide": false,
+        hide: false,
         el: '.scroll',
         dragSize: 200,
       }}
       slidesPerView={3}
       spaceBetween={0}
+      mousewheel={true}
       className='-mx-3 mb-0 md:mb-9 hidden md:flex flex-wrap md:overflow-hidden md:flex-nowrap gap-6 md:gap-0'    
     >
       <SwiperSlide>
@@ -64,10 +65,10 @@ const ScrollBanner = () => {
       </SwiperSlide>                  
     </Swiper>
     <div className='mb-32 hidden md:flex items-center gap-6'>
-      <div className='scroll w-full xl:w-8/12 h-1 rounded-md bg-white'></div>
+      <div className='scroll w-full xl:w-8/12 h-1 rounded-md static overflow-hidden'></div>
       <span className='text-white'>SCROLL</span>    
     </div>
-    </>
+    </div>
   )
 }
 

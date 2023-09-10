@@ -10,11 +10,7 @@
   body {
     background-color: #7000FF;
   };
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
 }
 
 @import "./assets/animation";
+@import "./assets/vendors/swiper.scss";
