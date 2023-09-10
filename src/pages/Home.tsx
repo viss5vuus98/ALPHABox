@@ -12,7 +12,7 @@ import arrow_notch_sm from '/assets/image/icons/arrow_notch_sm.svg';
 const Home = () => {
   return (
     <>
-      <div className="pt-14 h-[1778px] md:h-[880px] relative bg-cover bg-top" style={{backgroundImage: 'url(/assets/image/home_background.png)'}}>
+      <div className="pt-14 h-[1778px] md:h-[880px] relative bg-cover bg-top" style={{backgroundImage: 'url(assets/image/home_background.png)'}}>
         <div className="px-20">
           <div className="flex flex-col md:flex-row-reverse md:justify-between  text-white">
             <div className="mb-8 md:mb-0 border-t pt-2 md:pt-0 flex flex-col justify-between">
