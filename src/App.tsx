@@ -5,7 +5,7 @@ import Footer from './layout/Footer'
 import Home from './pages/Home'
 import Product from './pages/Product'
 import About from './pages/About'
-// import News from './pages/News'
+import News from './pages/News'
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
         <Route path="/ALPHABox">
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />  
+          <Route path="news" element={<News />} />
           <Route path=":name" element={<Product />} />
         </Route>
         <Route path="*" element={<Home />} />

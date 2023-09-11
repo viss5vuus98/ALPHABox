@@ -15,7 +15,7 @@ const Card_xl = ({serialNumber, name, type, description, image}: CardXlProps) =>
     <Link to={`/ALPHABox/${name}`} className="w-1/2 md:w-1/4">
       <div className="bg-cover bg-center md:bg-top" style={{ backgroundImage: `url(assets/image/${image})` }}>
         <div className="px-3 md:px-10 py-6 text-white md:bg-black md:border-x hover:md:opacity-50 transition-[opacity] duration-500">
-          <p className="my-20 text-center text-9xl xl:text-[400px] font-light font-[SairaExtraCondensed]">{serialNumber}</p>
+          <p className="my-20 text-center text-9xl xl:text-[400px] font-light font-['Saira_Extra_Condensed']">{serialNumber}</p>
           <p className="mb-[18px] text-center text-2xl md:text-3xl font-serif">{name}</p>
           <div className='flex flex-col xl:flex-row justify-between items-center xl:gap-4 2xl:gap-7'>
             <div className='mb-3 xl:text-[14px] xl:flex-[1_0_60%]'>
