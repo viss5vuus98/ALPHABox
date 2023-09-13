@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Product from './pages/Product'
 import About from './pages/About'
 import News from './pages/News'
+import NewsEvent from './pages/NewEvent'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />  
           <Route path="news" element={<News />} />
+          <Route path="news/:id" element={<NewsEvent />} />          
           <Route path=":name" element={<Product />} />
         </Route>
         <Route path="*" element={<Home />} />
